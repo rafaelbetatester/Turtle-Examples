@@ -5,8 +5,7 @@
 @prefix wn30pt: <https://w3id.org/own-pt/wn30-pt/instances/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-
- [ a       sp:InsertData ;
+ [ a       sp:DeleteData ;
                 sp:data ([ a sp:NamedGraph ;
                             sp:elements ([ sp:object "Uma mentira insignificante"@pt ;
                                            sp:predicate wn30:gloss ;
