@@ -1,0 +1,44 @@
+@prefix sp: <http://spinrdf.org/spl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix wn30: <https://w3id.org/own-pt/wn30/schema/> .
+@prefix wn30pt: <https://w3id.org/own-pt/wn30-pt/instances/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+
+ [ a       sp:InsertData ;
+                sp:data ([ a sp:NamedGraph ;
+                            sp:elements ([ sp:object "Uma mentira insignificante"@pt ;
+                                           sp:predicate wn30:gloss ;
+                                           sp:subject wn30pt:synset-06757057-n 
+                                         ]) ;
+                            sp:graphNameNode <http://example.org>
+                          ])
+              ] .
+
+ [ a       sp:DeleteDate ;
+                sp:data ([ a sp:NamedGraph ;
+                            sp:elements (
+			    [ sp:object wn30pt:wordsense-06757057-n-1 ;
+                              sp:predicate wn30:containsWordSense ;
+                              sp:subject wn30pt:synset-06757057-n 
+                            ]
+			    [ sp:subject   wn30pt:wordsense-06757057-n-1 ;
+                              sp:predicate wn30:wordNumber ;
+                              sp:object    "1" 
+                            ]
+			    [ sp:subject   wn30pt:wordsense-06757057-n-1 ;
+                              sp:predicate rdfs:label ;
+                              sp:object    "mentirinha" 
+                            ]
+			    [ sp:subject   wn30pt:wordsense-06757057-n-1 ;
+                              sp:predicate a ;
+                              sp:object    wn30:WordSense 
+                            ]
+			    [ sp:subject   wn30pt:wordsense-06757057-n-1 ;
+                              sp:predicate rdf:word ;
+                              sp:object    wn30pt:word-mentirinha 
+                            ] ) ;
+                            sp:graphNameNode <http://example.org>
+                          ])
+              ] .
