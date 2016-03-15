@@ -1,0 +1,9 @@
+ [ a       sp:InsertData ;
+                sp:data ([ a sp:NamedGraph ;
+                            sp:elements ([ sp:object "Uma mentira insignificante"@pt ;
+                                           sp:predicate wn30:gloss ;
+                                           sp:subject wn30pt:synset-06757057-n 
+                                         ]) ;
+                            sp:graphNameNode <http://example.org>
+                          ])
+              ] .
